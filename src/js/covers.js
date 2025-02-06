@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function startAnim() {
         if (isViewed(coversSect)) {
             marqueeRow.forEach(line => {
-                line.animationPlayState = 'running';
+                line.style.animationPlayState = 'running';
             });
             console.log('running');
         } else {
