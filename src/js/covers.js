@@ -1,35 +1,33 @@
-const coverSect = document.querySelector("#covers");
+document.addEventListener('DOMContentLoaded', () => {
+    const coversSect = document.querySelector('#covers');
+    const marqueeRow = document.querySelectorAll('.marquee-item');
 
-if (coverSect) {
-    const options = {
-        root: null,
-        rootMargin: "100px",
-        threshold: 0.5,
-    };
-
-    const obsFunc = (entries) => {
-        const isVisible = entries.some(entry => entry.isIntersecting);
-        if (isVisible) {
-            startAnim();
-        } else {
-            stopAnim();
-        }
-    };
-
-    function stopAnim() {
-        document.querySelectorAll(".covers-img").forEach(slide => 
-            slide.classList.remove("animation")
+    function isViewed(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.bottom > 0 && rect.top < (window.innerHeight || document.documentElement.clientHeight)
         );
     }
 
     function startAnim() {
-        document.querySelectorAll(".covers-img").forEach(slide => 
-            slide.classList.add("animation")
-        );
+        if (isViewed(coversSect)) {
+            marqueeRow.forEach(line => {
+                line.animationPlayState = 'running';
+            });
+            console.log('running');
+        } else {
+            marqueeRow.forEach(line => {
+                line.style.animationPlayState = 'paused';
+            });
+            console.log('paused');
+        }
     }
 
-    const obs = new IntersectionObserver(obsFunc, options);
-    obs.observe(coverSect);
-} else {
-    console.error("Element #covers not found");
-}
+    marqueeRow.forEach(line => {
+        line.style.animationPlayState = 'paused';
+    });
+    console.log('paused');
+
+    window.addEventListener('scroll', startAnim);
+    window.addEventListener('resize', startAnim);
+});
