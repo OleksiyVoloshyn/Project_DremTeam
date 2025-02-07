@@ -1,0 +1,288 @@
+
+
+.about-me-container {
+    font-size: 16px;
+}
+
+/* #region CSS for div with text and img */
+.about-me-text-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.about-me-text {
+    border-radius: 24px;
+    width: 343px;
+    height: 500px;
+    background: #242527;
+    padding: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-text {
+        width: 704px;
+        height: 700px;
+        padding: 64px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-me-text {
+        width: 680px;
+    }
+}
+
+.about-me-p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-p {
+        font-size: 38px;
+        line-height: 1.05;
+    }
+}
+
+.functional {
+    color: #ed3b44;
+}
+
+.websites {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.about-me-img {
+    border-radius: 24px;
+}
+
+/* #endregion CSS for div with text and img */
+
+/* #region CSS for div with description (about me, role, education) */
+.about-me-container .about-me-ul-div {
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    margin-bottom: 64px;
+}
+
+.about-me-ul-div .about-me-ul .about-me-li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .about-me-li {
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+}
+
+
+.about-me-li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 343px;
+    height: 1px;
+    background: rgba(250, 250, 250, 0.2);
+    margin-top: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .about-me-li::after {
+        width: 704px;
+        height: 2px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .about-me-li::after {
+        width: 1376px;
+    }
+}
+
+.about-me-li .h3-and-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 24px;
+}
+
+.about-me-close-btn {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 9px;
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff00;
+    stroke: #fafafa;
+    padding-right: 13px;
+}
+
+.close-open-icon {
+    stroke: #fafafa;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me-li-text {
+    font-weight: 500;
+}
+
+@media screen and (min-width:1440px) {
+    .about-me-li-text {
+        margin-left: 696px;
+    }
+}
+.about-me-first-p {
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width:768px) {
+    .about-me-first-p {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .about-me-first-p {
+        margin-bottom: 32px;
+    }
+}
+
+.about-me-li-role {
+    margin-bottom: 10px;
+}
+
+.about-me-li-educ {
+    width: 343px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-li-educ {
+        width: 465px;
+    }
+}
+
+.gap-ten {
+    margin-bottom: 10px;
+}
+/* #endregion CSS for div with description (about me, role, education) */
+
+/* #region CSS for div with skills */
+body .about-me-container .about-me-skills {
+    display: flex;
+    gap: 55px;
+}
+
+.about-me-skills-ul {
+    display: flex;
+    padding: 0;
+}
+
+.about-me-skills-ul .about-me-skills-li {
+    width: 130px;
+    height: 130px ;
+    border-radius: 100%;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    padding: 53px 0;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+}
+
+.swiper-slide {
+    position: static;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-skills-ul .about-me-skills-li {
+        width: 200px !important;
+        height: 200px !important;
+        padding: 88px 0;
+    }
+}
+
+.about-me-skill-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-skill-p {
+        font-size: 20px;
+    }
+}
+
+.about-me-btn-next {
+    background-color: transparent;
+    border: none;
+    stroke: rgba(250, 250, 250, 0.2);
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.about-me-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-open-icon {
+    display: block;
+}
+
+.active {
+    background-color: #ed3b44;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-skills-li {
+        flex: 0 0 33.3333%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-me-skills-li {
+        flex: 0 0 16.6666%;
+    }
+}
+
+.about-me-container .swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* #endregion CSS for div with skills */
+
+/* #region CSS for accordion */
+
+.ac .ac-panel {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease;
+}
+
+.ac.js-enabled .ac-panel {
+    visibility: hidden;
+}
+
+.ac.is-active .ac-panel {
+    visibility: visible;
+}
+
+/* .ac.is-active > .ac-header .ac-trigger::after {
+    content: "\2013";
+} */
+/* #endregion CSS for accordion */

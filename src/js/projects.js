@@ -1,43 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 
-// const swiper = new Swiper('.swiper-slide', {
-//   slidesPerView: 'auto', // Кількість слайдів на екран
-//   spaceBetween: 30, // Простір між слайдами
-//   loop: false, // Без циклічної прокрутки
-//   navigation: {
-//     nextEl: '.swiper-button-prev',
-//     prevEl: '.swiper-button-next',
-//   },
-//   keyboard: {
-//     enabled: true,
-//     onlyInViewport: true,
-//   },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 1,
-//     },
-//     1440: {
-//       slidesPerView: 1,
-//     },
-//   },
-// });
-
-// swiper.on('slideChange', function () {
-//   const nextButton = document.querySelector('.swiper-button-prev');
-//   const prevButton = document.querySelector('.swiper-button-next');
-//   if (swiper.isEnd) {
-//     nextButton.setAttribute('disabled', 'true');
-//   } else {
-//     nextButton.removeAttribute('disabled');
-//   }
-//   if (swiper.isBeginning) {
-//     prevButton.setAttribute('disabled', 'true');
-//   } else {
-//     prevButton.removeAttribute('disabled');
-//   }
-// });
-
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto', // Відображати кілька слайдів
   spaceBetween: 30, // Відстань між слайдами
@@ -83,3 +46,4 @@ function updateNavigationButtons() {
 }
 
 updateNavigationButtons();
+
