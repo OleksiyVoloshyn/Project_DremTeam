@@ -1,5 +1,9 @@
 .container-faq {
+  margin-top: 0;
+  margin-bottom: 0;
   max-width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .faq-title {
@@ -39,7 +43,6 @@
   color: rgb(242, 236, 236);
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
-  padding: 6px;
   transition: transform 0.3s ease;
   position: absolute;
   top: 0;
