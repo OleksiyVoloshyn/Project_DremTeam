@@ -14,19 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
             marqueeRow.forEach(line => {
                 line.style.animationPlayState = 'running';
             });
-            console.log('running');
         } else {
             marqueeRow.forEach(line => {
                 line.style.animationPlayState = 'paused';
             });
-            console.log('paused');
         }
     }
 
     marqueeRow.forEach(line => {
         line.style.animationPlayState = 'paused';
     });
-    console.log('paused');
 
     window.addEventListener('scroll', startAnim);
     window.addEventListener('resize', startAnim);
