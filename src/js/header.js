@@ -54,3 +54,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const modalHeader = document.querySelector(".modal-header");
+
+    if (menuToggle && modalHeader) {
+        menuToggle.addEventListener("click", function () {
+            modalHeader.classList.toggle("is-open");
+        });
+    }
+});

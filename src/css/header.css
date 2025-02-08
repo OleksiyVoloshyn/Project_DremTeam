@@ -74,12 +74,25 @@
     fill: #fafafa;
 }
 
-.header-icon-burger {
-    fill: #fafafa;
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
     cursor: pointer;
     position: absolute;
     top: 32px;
     right: 18px;
+}
+
+.header-icon-burger {
+    fill: #fafafa;
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
 }
 
 .btn-menu-tablet {
@@ -118,7 +131,6 @@
     overflow: hidden;
 }
 
-/* Для високої роздільної здатності */
 @media (min-resolution: 192dpi) {
     .modal-header {
         background-image: url(../img/header/background_modal@2x.png);
