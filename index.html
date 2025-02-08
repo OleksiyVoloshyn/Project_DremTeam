@@ -13,61 +13,55 @@
   <script type="module" crossorigin src="/Project_DremTeam/index.js"></script>
   <link rel="modulepreload" crossorigin href="/Project_DremTeam/assets/vendor-DS-UnTuI.js">
   <link rel="stylesheet" crossorigin href="/Project_DremTeam/assets/vendor-BcxbRG1O.css">
-  <link rel="stylesheet" crossorigin href="/Project_DremTeam/assets/index-DOMZC84W.css">
+  <link rel="stylesheet" crossorigin href="/Project_DremTeam/assets/index-B0s0G-c-.css">
 </head>
 
 <body>
   <header class="header container">
     <div class="header-left">
-        <img src="/Project_DremTeam/assets/jefferson-BneEGmLp.png" srcset="/Project_DremTeam/assets/jefferson-BneEGmLp.png 2x, /Project_DremTeam/assets/jefferson@3x-HOfPO5DD.png 3x" alt="jefferson.png" class="logo_img" />
-        <svg class="icon-header-logo" width="84px" height="19px">
-            <use href="/src/img/icons.svg#icon-user"></use>
-        </svg>
+        <img src="/Project_DremTeam/assets/jefferson-BneEGmLp.png" srcset="/Project_DremTeam/assets/jefferson-BneEGmLp.png 2x, /Project_DremTeam/assets/jefferson@3x-HOfPO5DD.png 3x" alt="jefferson.png" class="logo_img" width="80px" height="80px" />
+        <p class="header-title">
+            <span class="header-title-text">jefferson</span><span class="header-title-star">*</span>
+        </p>
     </div>
-    <div class="header-right">
-        <svg class="header-icon-burger" width="28px" height="28px">
-            <use href="/img/burger.svg#icon-menu"></use>
-        </svg>
-    </div>
+
+    <!-- Центр меню (має бути видимим на планшетах і десктопах) -->
     <div class="menu-center">
         <p class="menu-center-open">Menu</p>
         <ul class="menu-center-list">
-            <li class="menu-center-item">
-                <a href="#about-me">About me</a>
-            </li>
-            <li class="menu-center-item">
-                <a href="#benefits">Benefits</a>
-            </li>
-            <li class="menu-center-item">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="menu-center-item">
-                <a href="#faq">FAQ</a>
-            </li>
+            <li class="menu-center-item"><a href="#about-me">About me</a></li>
+            <li class="menu-center-item"><a href="#benefits">Benefits</a></li>
+            <li class="menu-center-item"><a href="#projects">Projects</a></li>
+            <li class="menu-center-item"><a href="#faq">FAQ</a></li>
         </ul>
     </div>
-    <a class="btn-menu-tablet" href="#work-together"> Order the project </a>
+
+    <!-- Кнопка для планшетів і десктопів -->
+    <a class="btn-menu-tablet" href="#work-together">Order the project</a>
+
+    <!-- Бургер-меню для мобільної версії -->
+    <div class="header-right">
+        <button class="menu-toggle" id="menu-toggle" aria-label="open menu">
+            <svg class="header-icon-burger" width="28px" height="28px">
+                <use href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-menu"></use>
+            </svg>
+        </button>
+    </div>
 </header>
+
+<!-- Модальне вікно -->
 <div class="modal-header">
     <div class="header-menu">
         <button class="modal-btn-close" id="close-btn" type="button" aria-label="close modal window">
             <svg class="menu-icon-close" width="28px" height="28px">
-                <use href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-x"></use>
+                <use href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-x"></use>
             </svg>
         </button>
         <ul class="menu-list">
-            <li class="menu-item">
-                <a href="#about-me">About me</a>
-            </li>
-            <li class="menu-item">
-                <a href="#benefits">Benefits</a>
-            </li>
-            <li class="menu-item">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="menu-item">
-                <a href="#faq">FAQ</a>
-            </li>
+            <li class="menu-item"><a href="#about-me">About me</a></li>
+            <li class="menu-item"><a href="#benefits">Benefits</a></li>
+            <li class="menu-item"><a href="#projects">Projects</a></li>
+            <li class="menu-item"><a href="#faq">FAQ</a></li>
         </ul>
         <a class="btn-menu" href="#work-together">Order the project</a>
     </div>
@@ -129,7 +123,7 @@
                             class="close-open-icon" 
                             width="28"
                             height="14">
-                            <use class="about-me-use" href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-icon-down"></use>
+                            <use class="about-me-use" href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-icon-down"></use>
                             </svg>
                         </button>
                     </div>
@@ -146,7 +140,7 @@
                             class="close-open-icon" 
                             width="28"
                             height="14">
-                            <use class="about-me-use" href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-icon-down"></use>
+                            <use class="about-me-use" href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-icon-down"></use>
                             </svg>
                         </button>
                     </div>
@@ -164,7 +158,7 @@
                             class="close-open-icon" 
                             width="28"
                             height="14">
-                            <use class="about-me-use" href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-icon-down"></use>
+                            <use class="about-me-use" href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-icon-down"></use>
                             </svg>
                         </button>
                     </div>
@@ -203,7 +197,7 @@
                 class="about-me-next-btn-svg"
                 width="28"
                 height="28">
-                    <use class="about-me-use-next" href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-icon-right"></use>
+                    <use class="about-me-use-next" href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-icon-right"></use>
                 </svg>
             </button>
         </div>
@@ -217,7 +211,7 @@
           <li class="benefits-list-item">
             <div class="benefits-icon">
               <svg class="benefits-section-icon" width="24" height="24">
-                <use href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-user"></use>
+                <use href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-user"></use>
               </svg>
             </div>
             <div class="item-container">
@@ -231,7 +225,7 @@
           <li class="benefits-list-item">
             <div class="benefits-icon">
               <svg class="benefits-section-icon" width="24" height="24">
-                <use href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-chat"></use>
+                <use href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-chat"></use>
               </svg>
             </div>
             <div class="item-container">
@@ -245,7 +239,7 @@
           <li class="benefits-list-item">
             <div class="benefits-icon">
               <svg class="benefits-section-icon" width="24" height="24">
-                <use href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-brush"></use>
+                <use href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-brush"></use>
               </svg>
             </div>
             <div class="item-container">
@@ -259,7 +253,7 @@
           <li class="benefits-list-item">
             <div class="benefits-icon">
               <svg class="benefits-section-icon" width="24" height="24">
-                <use href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-hourglass"></use>
+                <use href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-hourglass"></use>
               </svg>
             </div>
             <div class="item-container">
@@ -477,7 +471,7 @@
         </div>
         <div class="swiper-button-next">
           <svg class="project-icon-left-right right" width="52" height="52">
-            <use href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-icon-left"></use>
+            <use href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-icon-left"></use>
           </svg>
         </div>
       </div>
@@ -1098,7 +1092,7 @@
     <div class="reviews-button-next">
       <button type="button" class="reviews-next-btn">
         <svg width="32" height="32" class="reviews-list-next-icon">
-          <use href="/Project_DremTeam/assets/icons-BKZ3m1pg.svg#icon-icon-right"></use>
+          <use href="/Project_DremTeam/assets/icons-L-adWO-x.svg#icon-icon-right"></use>
         </svg>
       </button>
     </div>
