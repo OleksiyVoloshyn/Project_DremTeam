@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function openModal() {
     modalHeader.classList.add('is-open');
     document.body.style.overflow = 'hidden';
-    modalBtnClose.style.display = 'flex';
   }
 
   function closeModal() {
@@ -19,23 +18,39 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = '';
   }
 
-  modalBtnClose.addEventListener('click', closeModal);
-  btnMenu.addEventListener('click', openModal);
-  btnMenuTablet.addEventListener('click', closeModal);
-  btnMenuModal.addEventListener('click', closeModal);
+  if (modalBtnClose) {
+    modalBtnClose.addEventListener('click', closeModal);
+  }
+  if (btnMenu) {
+    btnMenu.addEventListener('click', openModal);
+  }
+  if (btnMenuTablet) {
+    btnMenuTablet.addEventListener('click', closeModal);
+  }
+  if (btnMenuModal) {
+    btnMenuModal.addEventListener('click', closeModal);
+  }
   menuLinks.forEach(function (link) {
-    link.addEventListener('click', function () {
-      closeModal();
-    });
+    link.addEventListener('click', closeModal);
   });
 
   const menuCenterItems = document.querySelectorAll('.menu-center-item a');
   menuCenterItems.forEach(function (link) {
-    link.addEventListener('click', function (event) {
+    link.addEventListener('click', function () {
       menuCenterList.classList.remove('is-open');
     });
   });
-  menuCenterOpen.addEventListener('click', function () {
-    menuCenterList.classList.toggle('is-open');
+
+  if (menuCenterOpen) {
+    menuCenterOpen.addEventListener('click', function () {
+      menuCenterList.classList.toggle('is-open');
+    });
+  }
+
+  // Закриває модальне вікно при натисканні поза ним
+  modalHeader.addEventListener('click', function (event) {
+    if (event.target === modalHeader) {
+      closeModal();
+    }
   });
 });
