@@ -180,9 +180,27 @@
 /* #endregion CSS for div with description (about me, role, education) */
 
 /* #region CSS for div with skills */
-body .about-me-container .about-me-skills {
+.swiper-slide-active {
+    background-color: #ed3b44;
+}
+
+.about-me-wrapper-for-skills {
     display: flex;
     gap: 55px;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-wrapper-for-skills {
+        gap: 64px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-me-wrapper-for-skills {
+        gap: 72px;
+        padding: 0 32px;
+    }
 }
 
 .about-me-skills-ul {
@@ -234,6 +252,13 @@ body .about-me-container .about-me-skills {
     height: 28px;
 }
 
+@media screen and (min-width: 768px) {
+    .about-me-btn-next {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .about-me-close-btn {
     display: flex;
     justify-content: center;
@@ -241,10 +266,6 @@ body .about-me-container .about-me-skills {
 }
 .close-open-icon {
     display: block;
-}
-
-.active {
-    background-color: #ed3b44;
 }
 
 @media screen and (min-width: 768px) {
@@ -262,6 +283,7 @@ body .about-me-container .about-me-skills {
 .about-me-container .swiper .swiper-wrapper {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 /* #endregion CSS for div with skills */
@@ -281,8 +303,4 @@ body .about-me-container .about-me-skills {
 .ac.is-active .ac-panel {
     visibility: visible;
 }
-
-/* .ac.is-active > .ac-header .ac-trigger::after {
-    content: "\2013";
-} */
 /* #endregion CSS for accordion */
