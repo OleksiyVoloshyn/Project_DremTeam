@@ -4,14 +4,15 @@
     max-width: 375px;
     margin: 0 auto;
     padding: 32px 16px;
-    background-image: url(./src/img/footer/mobFooterElements1x.png);
+    background-image: url(../img/footer/mobFooterElements1x.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 85px;
   }
   @media (min-resolution: 192dpi) {
     .footer {
-        background-image: url(./src/img/footer/mobFooterElements@x2.png);
+
+        background-image: url(../img/footer/mobFooterElements@x2.png);
     }
 }
   .together-container {
@@ -221,12 +222,12 @@
       max-width: 768px;
       margin: 0 auto;
       padding: 80px 32px;
-      background-image: url(./src/img/footer/tabletFooterElements1x.png);
+      background-image: url(../img/footer/tabletFooterElements1x.png);
       background-size: 198px;
     }
     @media (min-resolution: 192dpi) {
       .footer{
-          background-image: url(./src/img/footer/tabletFooterElements@x2.png);
+          background-image: url(../img/footer/tabletFooterElements@x2.png);
       }
   }
     .togPng {
@@ -281,12 +282,12 @@
   @media screen and (min-width: 1440px) {
     .footer {
       max-width: 1140px;
-      background-image: url(./src/img/footer/DeskFooterElements1x.png);
-      background-size: 653px 636px;
+      background-image: url(../img/footer/DeskFooterElements1x.png);
+
     }
     @media (min-resolution: 192dpi) {
       .footer{
-          background-image: url(./src/img/footer/DeskFooterElements@x2.png);
+          background-image: url(../img/footer/DeskFooterElements@x2.png);
       }
   }
     .togPng {
