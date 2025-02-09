@@ -181,17 +181,17 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .accordion-container {
+    .about-me-ul-div .accordion-container {
         flex-direction: column;
     }
-    .swiper-slide {
+    .about-me-skills-ul .swiper-slide {
         justify-content: center;
     }
 }
 /* #endregion CSS for div with description (about me, role, education) */
 
 /* #region CSS for div with skills */
-.swiper-slide-active {
+.about-me-wrapper-for-skills .swiper-slide-active {
     background-color: #ed3b44;
 }
 
@@ -229,7 +229,7 @@
     aspect-ratio: 1 / 1;
 }
 
-.swiper-slide {
+.about-me-skills-ul .swiper-slide {
     position: static;
 }
 
@@ -253,7 +253,7 @@
     }
 }
 
-.swiper-button-next.about-me-btn-next {
+.about-me-btn-next {
     background-color: transparent;
     border: none;
     stroke: rgba(250, 250, 250, 0.2);
@@ -334,15 +334,15 @@
 
 .ac.is-active .ac-panel {
     visibility: visible;
-}
-.ac {
+} 
+.about-me-ul .ac {
     --color-transparent: transparent !important;
 }
 
-.ac-header {
-    align-items: baseline !important;
-}
-.ac .ac-trigger {
+.about-me-ul .ac-header {
+    align-items: baseline;
+} 
+.about-me-ul .ac .ac-trigger {
     width: 36px !important;
     max-height: 36px !important;
     border: 1px solid rgba(250, 250, 250, 0.2);
