@@ -1,0 +1,52 @@
+<header class="header container">
+    <div class="header-left">
+        <img src="./img/header/jefferson.png" srcset="
+                  ./img/header/jefferson@2x.png 2x,
+                  ./img/header/jefferson@3x.png 3x
+                " alt="jefferson.png" class="logo_img" width="80px" height="80px" />
+        <p class="header-title">
+            <span class="header-title-text">jefferson</span><span class="header-title-star">*</span>
+        </p>
+    </div>
+
+    <!-- Центр меню (має бути видимим на планшетах і десктопах) -->
+    <div class="menu-center">
+        <p class="menu-center-open">Menu</p>
+        <ul class="menu-center-list">
+            <li class="menu-center-item"><a href="#about-me">About me</a></li>
+            <li class="menu-center-item"><a href="#benefits">Benefits</a></li>
+            <li class="menu-center-item"><a href="#projects">Projects</a></li>
+            <li class="menu-center-item"><a href="#faq">FAQ</a></li>
+        </ul>
+    </div>
+
+    <!-- Кнопка для планшетів і десктопів -->
+    <a class="btn-menu-tablet" href="#work-together">Order the project</a>
+
+    <!-- Бургер-меню для мобільної версії -->
+    <div class="header-right">
+        <button class="menu-toggle" id="menu-toggle" aria-label="open menu">
+            <svg class="header-icon-burger" width="28px" height="28px">
+                <use href="../src/img/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<!-- Модальне вікно -->
+<div class="modal-header">
+    <div class="header-menu">
+        <button class="modal-btn-close" id="close-btn" type="button" aria-label="close modal window">
+            <svg class="menu-icon-close" width="28px" height="28px">
+                <use href="/img/icons.svg#icon-x"></use>
+            </svg>
+        </button>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#about-me">About me</a></li>
+            <li class="menu-item"><a href="#benefits">Benefits</a></li>
+            <li class="menu-item"><a href="#projects">Projects</a></li>
+            <li class="menu-item"><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn-menu" href="#work-together">Order the project</a>
+    </div>
+</div>

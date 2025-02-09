@@ -1,0 +1,272 @@
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.header.container {
+    padding-top: 32px;
+}
+
+.header-left {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.img-header {
+    width: 80px;
+    height: 80px;
+}
+
+.header-title {
+    font-family: 'Inter Tight', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #FAFAFA;
+}
+
+.header-title-text,
+.header-title-star {
+    color: #FAFAFA;
+}
+
+.menu-center {
+    width: 74px;
+    position: relative;
+    display: none;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.menu-center-open {
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-center-list {
+    width: auto;
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.menu-center-list.is-open {
+    display: block;
+}
+
+.menu-center-item a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.menu-center-item a:hover {
+    color: #ed3b44;
+}
+
+.icon-header-logo {
+    fill: #fafafa;
+}
+
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 18px;
+}
+
+.header-icon-burger {
+    fill: #fafafa;
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+}
+
+.btn-menu-tablet {
+    display: none;
+    color: #fafafa;
+    height: 50px;
+    padding: 14px 31px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ed3b44;
+    transition: background-color 0.3s;
+}
+
+.btn-menu-tablet:hover,
+.btn-menu-tablet:focus {
+    background-color: #e0373f;
+}
+
+.modal-header {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 412px;
+    height:100%;
+    background-image: url(../img/header/background_modal.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (min-resolution: 192dpi) {
+    .modal-header {
+        background-image: url(../img/header/background_modal@2x.png);
+    }
+}
+
+.modal-header.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 32px;
+    right: 18px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    border: none;
+    background-color: transparent;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.modal-header.is-open .modal-btn-close {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon-close {
+    fill: #fafafa;
+}
+
+.menu-list {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item a {
+    color: #fafafa;
+    text-decoration: underline;
+}
+
+.btn-menu {
+    position: absolute;
+    bottom: 64px;
+    color: #fafafa;
+    padding: 14px 31px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ed3b44;
+    transition: background-color 0.3s;
+}
+
+.btn-menu:hover {
+    background-color: #e0373f;
+}
+
+.menu-center {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-center {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.header-right {
+    display: none;
+}
+
+.btn-menu-tablet {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-center {
+        display: none;
+    }
+
+    .btn-menu-tablet {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .btn-menu-tablet {
+        display: block;
+    }
+
+    .header-right {
+        display: none;
+    }
+        .modal-header {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            /* Щоб не можна було клікнути */
+        }
+}
+
+    
+    
