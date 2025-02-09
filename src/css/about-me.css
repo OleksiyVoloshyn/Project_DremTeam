@@ -321,6 +321,10 @@
     }
 }
 
+.about-me-btn-next .swiper-button-next:after {
+    content: '';
+}
+
 /* #endregion CSS for div with skills */
 
 /* #region CSS for accordion */
@@ -338,8 +342,10 @@
 .ac.is-active .ac-panel {
     visibility: visible;
 } 
-.about-me-ul .ac {
-    --color-transparent: transparent !important;
+@media screen and (min-width: 320px) {
+    .about-me-ul-div .about-me-ul .ac {
+        --color-transparent: transparent !important;
+    }
 }
 
 .about-me-ul .ac-header {
@@ -365,4 +371,4 @@
     }
 }
 
-/* #endregion CSS for accordion */
+/* #endregion CSS for accordion */ 
