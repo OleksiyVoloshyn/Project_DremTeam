@@ -148,6 +148,11 @@
   
   /* Desktops (769px and up) */
   @media only screen and (min-width: 769px) {
+    .hero-h1 {
+      width: 1084px;
+      height: 270px; 
+    }
+
     .hero {
       background-image: url('../img/hero/hero-bg-desktop-1x.jpg');
       background-repeat: no-repeat;
