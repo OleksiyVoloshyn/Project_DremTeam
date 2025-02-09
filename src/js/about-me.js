@@ -7,12 +7,8 @@ const aboutMeBtnIcons = document.querySelectorAll(".about-me-use");
 const aboutMeBtnNext = document.querySelector(".about-me-btn-next");
 
 new Accordion(".accordion-container", {
-    onOpen: function(element) {
-        const btnIcon = element.querySelector('.about-me-use');
-    },
-    onClose: function(element) {
-        const btnIcon = element.querySelector('.about-me-use');
-        },
+    onOpen: function(element) {},
+    onClose: function(element) {},
     });
 
 const swiper = new Swiper('.swiper', {
@@ -35,19 +31,6 @@ const swiper = new Swiper('.swiper', {
     navigation: {
         nextEl: '.about-me-btn-next',
     },
-    // on: {
-    //     slideChange: function () {
-    //         const slides = this.slides;
-            
-    //         slides.forEach(slide => slide.classList.remove('active'));
-
-    //         const activeSlide = slides[this.realIndex];
-
-    //         if (activeSlide) {
-    //             activeSlide.classList.add('active');
-    //         }
-    //     },
-    // },
 });
 
 aboutMeBtnNext.addEventListener('click', () => {

@@ -153,7 +153,7 @@
 }
 
 @media screen and (min-width:1440px) {
-    .about-me-li-text {
+    .about-me-ul .ac .ac-panel .ac-text.about-me-li-text {
         margin-left: 696px;
     }
 }
@@ -399,10 +399,10 @@
     transform: rotate(180deg);
 }
 
-.ac {
+.about-me-ul-div .about-me-ul .ac {
     background-color: transparent;
 }
-.ac-text {
+.about-me-ul .about-me-li .ac-text {
     color: #fafafa;
 }
 /* #endregion CSS for accordion */ 
