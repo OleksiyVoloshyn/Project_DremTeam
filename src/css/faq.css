@@ -102,7 +102,7 @@
 
 @media screen and (min-width: 768px) {
   .container-faq {
-    max-width: 720px;
+    max-width: 767px;
   }
   .page-faq .ac-trigger {
     padding-right: 219px !important;
@@ -122,7 +122,7 @@
 
 @media screen and (min-width: 1440px) {
   .container-faq {
-    max-width: 1200px;
+    max-width: 1356px;
   }
 
   .page-faq .accordion-container {
