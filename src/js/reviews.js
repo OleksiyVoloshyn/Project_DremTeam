@@ -1,4 +1,4 @@
-import { getReviews } from './get-api'; // Перевірте та замініть шлях на ваш
+import { getReviews } from './get-api'; 
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -58,7 +58,3 @@ on: {
   },
 });
 
-// npm i
-// npm i swiper
-// npm run dev
-// ?? ./get.api?
