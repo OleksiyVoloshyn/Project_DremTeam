@@ -352,7 +352,7 @@
 .about-me-ul .ac-header {
     align-items: baseline;
 } 
-.about-me-ul .ac .ac-trigger {
+.about-me-ul .ac .about-me-close-btn {
     width: 36px !important;
     max-height: 36px !important;
     border: 1px solid rgba(250, 250, 250, 0.2);
@@ -362,6 +362,10 @@
     align-items: center;
     padding: 0;
     min-height: 36px;
+}
+
+.about-me-ul .ac .ac-trigger:after {
+    content: '';
 }
 
 @media screen and (min-width: 768px) {
