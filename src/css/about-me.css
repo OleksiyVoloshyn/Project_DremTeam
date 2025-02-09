@@ -322,6 +322,7 @@
 }
 
 .about-me-btn-next .swiper-button-next:after {
+    display: none;
     content: '';
 }
 
