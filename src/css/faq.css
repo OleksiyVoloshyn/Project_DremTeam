@@ -16,23 +16,23 @@
   color: rgba(250, 250, 250, 0.4);
 }
 
-.accordion-container {
+.page-faq .accordion-container {
   list-style: none;
   padding: 0;
 }
 
-.ac-trigger::after {
+.page-faq .ac-trigger::after {
   display: none;
 }
 
-.ac-trigger {
+.page-faq .ac-trigger {
   all: unset;
   cursor: pointer;
   font-weight: bold;
   position: relative;
 }
 
-.ac-trigger {
+.page-faq .ac-trigger {
   font: inherit !important;
   padding-left: 0 !important;
   padding-right: 54px !important;
@@ -103,7 +103,7 @@
   .container-faq {
     max-width: 720px;
   }
-  .ac-trigger {
+  .page-faq .ac-trigger {
     padding-right: 219px !important;
     padding-top: 32px !important;
     padding-bottom: 26px !important;
@@ -165,12 +165,15 @@
   .is-active .ac-btn {
     transform: translate(-32px, -50%) rotate(180deg);
   }
-  .ac-text {
+  .page-faq .ac-text {
     padding-right: 32px !important;
     padding-bottom: 24px !important;
   }
-  .ac-padding {
+  .page-faq .ac-padding {
     padding-left: 32px !important;
     padding-right: 0 !important;
+  }
+  .page-faq .ac-last {
+    padding-right: 50px !important;
   }
 }
