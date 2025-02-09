@@ -66,7 +66,7 @@
   }
   
   .a-social {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
@@ -173,9 +173,22 @@
         background-repeat: no-repeat;
       }
     }
-  /*  */
+
     .hero-social {
       margin-left: 935px;
       margin-right: 32px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 8px;
+    }
+
+    .hero-email {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 10px;
     }
   }  
