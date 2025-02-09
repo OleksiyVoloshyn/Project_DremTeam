@@ -66,7 +66,7 @@
   }
   
   .a-social {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
@@ -148,6 +148,15 @@
   
   /* Desktops (769px and up) */
   @media only screen and (min-width: 769px) {
+    .hero-h1 {
+      max-width: 1084px;
+      height: 270px; 
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: 500;
+      font-size: 90px;
+    }
+
     .hero {
       background-image: url('../img/hero/hero-bg-desktop-1x.jpg');
       background-repeat: no-repeat;
@@ -164,9 +173,22 @@
         background-repeat: no-repeat;
       }
     }
-  /*  */
+
     .hero-social {
       margin-left: 935px;
       margin-right: 32px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 8px;
+    }
+
+    .hero-email {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 10px;
     }
   }  
