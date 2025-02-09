@@ -10,13 +10,13 @@ new Accordion(".accordion-container", {
     onOpen: function(element) {
         const btnIcon = element.querySelector('.about-me-use');
         if (btnIcon) {
-            btnIcon.setAttribute('href', '/img/icons.svg#icon-icon-up');
+            btnIcon.setAttribute('href', './img/icons.svg#icon-icon-up');
         }
     },
     onClose: function(element) {
         const btnIcon = element.querySelector('.about-me-use');
         if (btnIcon) {
-            btnIcon.setAttribute('href', '/img/icons.svg#icon-icon-down');
+            btnIcon.setAttribute('href', './img/icons.svg#icon-icon-down');
         };
     }
 });
