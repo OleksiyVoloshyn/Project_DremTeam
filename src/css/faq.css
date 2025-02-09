@@ -38,6 +38,7 @@
   padding-right: 54px !important;
   padding-top: 20px !important;
   padding-bottom: 16px !important;
+  width: 100% !important;
   display: block;
   font-weight: 600;
   font-size: 20px !important;
@@ -92,7 +93,7 @@
   border-top: 1px solid rgb(64, 60, 60) !important;
 }
 
-.ac-header {
+.page-faq .ac-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,11 +125,11 @@
     max-width: 1200px;
   }
 
-  .accordion-container {
+  .page-faq .accordion-container {
     display: flex;
     flex-wrap: wrap;
   }
-  .ac {
+  .page-faq .ac {
     flex-basis: calc((100%) / 2);
     background-color: #1c1d20 !important;
   }
