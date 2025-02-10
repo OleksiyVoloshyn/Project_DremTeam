@@ -1,11 +1,3 @@
-.container-faq {
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
 .faq-title {
   margin-top: 0;
   margin-bottom: 32px;
@@ -101,9 +93,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container-faq {
-    max-width: 767px;
-  }
   .page-faq .ac-trigger {
     padding-right: 219px !important;
     padding-top: 32px !important;
@@ -121,10 +110,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container-faq {
-    max-width: 1356px;
-  }
-
   .page-faq .accordion-container {
     display: flex;
     flex-wrap: wrap;
