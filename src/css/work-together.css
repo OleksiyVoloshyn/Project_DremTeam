@@ -1,17 +1,20 @@
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .footer {
     position: relative;
     font-family: Inter Tight;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 32px 16px;
+  }
+  .footer_container {
     background-image: url(../img/footer/mobFooterElements1x.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 85px;
   }
   @media (min-resolution: 192dpi) {
-    .footer {
-
+    .footer_container {
         background-image: url(../img/footer/mobFooterElements@x2.png);
     }
 }
@@ -144,7 +147,20 @@
   .together-input--one {
     margin-right: 4px;
   }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 29, 32, 0.5);
+    z-index: 999;
+    display: none;
+  }
   
+  .modal-overlay.active {
+    display: block;
+  }
   .modal {
     display: none;
     position: fixed;
@@ -156,20 +172,24 @@
     border-radius: 10px;
     text-align: center;
     border: 1px solid #FAFAFA1A;
-    padding: 64px 32px;
-    width: 363px;
+
   }
   
   .modal-content {
-    position: relative;
+    width: 343px;
+    padding: 64px 32px;
   }
   
   .close-button {
     position: absolute;
-    cursor: pointer;
-    top: -45px;
-    right: 0;
-    font-size: 22px;
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
   
   .modal.active {
@@ -194,21 +214,7 @@
     font-weight: 500;
     line-height: 24px;
   }
-  
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(28, 29, 32, 0.5);
-    z-index: 999;
-    display: none;
-  }
-  
-  .modal-overlay.active {
-    display: block;
-  }
+
   
   @media screen and (min-width: 1px) and (max-width: 328px){
     .together-link--one {
@@ -218,15 +224,12 @@
   
   
   @media screen and (min-width: 768px) {
-    .footer {
-      max-width: 768px;
-      margin: 0 auto;
-      padding: 80px 32px;
+    .footer_container {
       background-image: url(../img/footer/tabletFooterElements1x.png);
       background-size: 198px;
     }
     @media (min-resolution: 192dpi) {
-      .footer{
+      .footer_container {
           background-image: url(../img/footer/tabletFooterElements@x2.png);
       }
   }
@@ -278,15 +281,21 @@
       margin-right: 8px;
     }
   }
-  
+  .modal-content {
+    width: 492px;
+    padding: 64px;
+  }
   @media screen and (min-width: 1440px) {
     .footer {
-      max-width: 1140px;
+      padding-top: 80px;
+      padding-bottom: 169px;
+    }
+    .footer_container {
       background-image: url(../img/footer/DeskFooterElements1x.png);
 
     }
     @media (min-resolution: 192dpi) {
-      .footer{
+      .footer_container{
           background-image: url(../img/footer/DeskFooterElements@x2.png);
       }
   }
@@ -340,13 +349,10 @@
       margin-right: 8px;
     }
   
-    .modal {
-      padding: 64px;
-    }
   
     .close-button {
-      top: -45px;
-      right: -40px;
+      top: 20px;
+      right: 20px;
       font-size: 26px;
       margin-bottom: 26px;
     }
