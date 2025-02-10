@@ -385,8 +385,8 @@
 }
 
 .swiper-button-next:after {
-    width: 36px;
-    height: 36px;
+    width: 0;
+    height: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -403,6 +403,6 @@
     background-color: transparent;
 }
 .about-me-ul .about-me-li .ac-text {
-    color: #fafafa;
+    color: #fafafa !important;
 }
 /* #endregion CSS for accordion */ 
