@@ -1,4 +1,6 @@
-
+.visually-hidden {
+    display: none;
+}
 
 .about-me-container {
     font-size: 16px;
@@ -67,7 +69,19 @@
 .about-me-container .about-me-ul-div {
     line-height: 1.5;
     letter-spacing: -0.02em;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-container .about-me-ul-div {
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-container .about-me-ul-div {
+        margin-bottom: 96px;
+    }
 }
 
 .about-me-ul-div .about-me-ul .about-me-li {
@@ -87,7 +101,7 @@
     content: '';
     display: block;
     position: absolute;
-    width: 343px;
+    max-width: 100%;
     height: 1px;
     background: rgba(250, 250, 250, 0.2);
     margin-top: 20px;
@@ -275,6 +289,11 @@
     stroke: #3b3b3b;
 }
 
+.about-me-next-btn-svg:focus {
+    outline: none;
+    border: none;
+}
+
 @media screen and (min-width: 768px) {
     .about-me-wrapper-for-skills .about-me-btn-next {
         width: 40px;
@@ -304,7 +323,8 @@
 }
 
 .about-me-container .swiper {
-    width: 260px;
+    min-width: 260px;
+    height: 130px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -312,6 +332,7 @@
 @media screen and (min-width: 768px) {
     .about-me-container .swiper {
         width: 600px;
+        min-height: 200px;
     }
 }
 
@@ -382,9 +403,6 @@
 
 .swiper-button-next:after {
     content: '';
-}
-
-.swiper-button-next:after {
     width: 0;
     height: 0;
 }
@@ -404,5 +422,17 @@
 }
 .about-me-ul .about-me-li .ac-text {
     color: #fafafa !important;
+}
+
+.about-me-wrapper-for-skills .about-me-btn-next {
+    min-width: 28px;
+    min-height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-wrapper-for-skills .about-me-btn-next {
+        min-width: 40px;
+        min-height: 40px;
+    }
 }
 /* #endregion CSS for accordion */ 
