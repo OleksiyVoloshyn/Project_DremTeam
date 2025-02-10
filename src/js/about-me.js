@@ -9,11 +9,16 @@ const aboutMeBtnNext = document.querySelector(".about-me-btn-next");
 new Accordion(".accordion-container", {
     onOpen: function(element) {},
     onClose: function(element) {},
+    openOnInit: [0],
     });
 
 const swiper = new Swiper('.swiper', {
     slideActiveClass: 'swiper-slide-active',
     modules: [ Navigation, Keyboard ],
+    keyboard: {
+        enabled: true, 
+        onlyInViewport: true,
+    },
     spaceBetween: 0,
     loop: true,
     slidesPerView: 2, 
