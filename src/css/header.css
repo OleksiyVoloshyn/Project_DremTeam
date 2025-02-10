@@ -48,9 +48,11 @@
 .menu-center-open {
     text-align: center;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .menu-center-list {
+    margin-top: 8px;
     width: auto;
     display: none;
     position: absolute;
@@ -64,6 +66,7 @@
 .menu-center-item a {
     text-decoration: none;
     color: #fafafa;
+    gap: 10px;
 }
 
 .menu-center-item a:hover {
