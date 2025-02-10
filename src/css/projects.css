@@ -100,12 +100,10 @@
   justify-content: center;
   padding: 100px 16px;
 }
-
 .projects-buttons {
-  margin: 0 auto;
-  width: fit-content;
-  margin-top: 32px;
+   margin-top: 32px;
   display: flex;
+  justify-content: center;
   gap: 12px;
 }
 
