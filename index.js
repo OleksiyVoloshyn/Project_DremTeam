@@ -15,7 +15,7 @@ import{A as w,S as g,N as E,K as S,a as j}from"./assets/vendor-CjHTzI7x.js";(fun
             <h3 class="projects-item-info-descr-title">
                 Programming Across Borders: Ideas, Technologies, Innovations
             </h3>
-            <a target="_blank" href="https://github.com/Psyche-1/bestteam2/" class="projects-item-info-descr-link">See project</a>
+            <a target="_blank" href="https://github.com/Psyche-1/bestteam2/" rel="noopener" class="projects-item-info-descr-link">See project</a>
             </div>
         </div>
         <div class="projects-item-project">
