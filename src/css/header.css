@@ -267,9 +267,11 @@
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
-            /* Щоб не можна було клікнути */
+            
         }
 }
 
-    
+.html {
+     scroll-behavior: smooth;
+ }
     
