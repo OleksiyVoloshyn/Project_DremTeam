@@ -41,7 +41,7 @@ function createMarkUp(img) {
     .map(item => {
       return `
       <div class="swiper-slide">
-        <li class="projects-item">
+        <div class="projects-item">
         <div class="projects-item-info">
             <ul class="projects-item-info-hashtags">
             <li class="projects-item-info-hashtags-tag">#react</li>
@@ -69,7 +69,7 @@ function createMarkUp(img) {
             <img src=${firstImgDst} alt="project image" />
             </picture>
         </div>
-        </li>
+        </div>
       </div>
         `;
     })
