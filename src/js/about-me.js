@@ -36,6 +36,15 @@ const swiper = new Swiper('.swiper', {
     navigation: {
         nextEl: '.about-me-btn-next',
     },
+    on: {
+        init: function () {
+            setTimeout(() => {
+                document.querySelectorAll(".swiper-slide").forEach((el) => {
+                    el.removeAttribute("role");
+                });
+            }, 100);
+        },
+    },
 });
 
 aboutMeBtnNext.addEventListener('click', () => {
