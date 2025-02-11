@@ -222,8 +222,13 @@
 
 .about-me-wrapper-for-skills {
     display: flex;
-    gap: 55px;
     align-items: center;
+}
+
+@media screen and (min-width: 320px) {
+.about-me-wrapper-for-skills {
+    gap: 55px;
+}
 }
 
 @media screen and (min-width: 768px) {
