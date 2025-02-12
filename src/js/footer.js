@@ -58,24 +58,26 @@ function changeInputBorder(color) {
   }, 3000); 
 }
 
+function handleKeyDown(event) {
+  if (event.key === 'Escape') {
+    closeModalWindow();
+  }
+}
+
 // Модальне вікно
 function openModal() {
   modal.classList.add('active'); 
   modalOverlay.classList.add('active');
-  body.classList.add('no-scroll'); 
+  body.classList.add('no-scroll');
+  document.addEventListener('keydown', handleKeyDown);
 }
 
 function closeModalWindow() {
   modal.classList.remove('active'); 
   modalOverlay.classList.remove('active');
-  body.classList.remove('no-scroll'); 
+  body.classList.remove('no-scroll');
+  document.removeEventListener('keydown', handleKeyDown);
 }
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    closeModalWindow();
-  }
-});
 
 function showMessage(messageElement) {
   messageElement.style.display = "block";
