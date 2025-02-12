@@ -302,6 +302,7 @@
     }
     .footer_container {
       background-image: url(../img/footer/DeskFooterElements1x.png);
+      background-size: 430px ;
       padding: 0 196px;
     }
     @media (min-resolution: 192dpi) {
