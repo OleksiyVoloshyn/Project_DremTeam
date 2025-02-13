@@ -15,10 +15,6 @@
 }
 
 .reviews-list {
-    /* width: 332px;
-    height: 302px; */
-    padding-bottom: 20px;
-    padding-top: 20px;
     margin-bottom: 32px;
     display: flex;
     gap: 30px;
@@ -138,6 +134,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .reviws-swiper{
+        margin-bottom: 82px 0;
+    }
     .reviews-list-item {
         width: 322px !important;
     }
