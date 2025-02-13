@@ -135,7 +135,7 @@
 
 @media screen and (min-width: 1440px) {
     .reviws-swiper{
-        margin-bottom: 82px 0;
+        margin-bottom: 82px;
     }
     .reviews-list-item {
         width: 322px !important;

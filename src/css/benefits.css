@@ -61,6 +61,7 @@
       letter-spacing: -0.02em;
       color: #fafafa;
       transition: border-color var(--Animation_cubic);
+      margin-bottom: 10px;
     }
     
     .button-order-benefits:hover {
@@ -144,8 +145,7 @@
   }
   /* ====================DESKTOP====================== */
   @media screen and (min-width: 1440px) {
-    .benefits-section {
-    }
+    
     .benefits-container {
       display: flex;
       justify-content: space-between;
