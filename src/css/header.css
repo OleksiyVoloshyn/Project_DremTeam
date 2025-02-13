@@ -218,6 +218,10 @@
 .menu-center {
     display: none;
 }
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
 
 @media only screen and (min-width: 768px) {
     .menu-center {
